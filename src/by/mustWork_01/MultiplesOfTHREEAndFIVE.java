@@ -14,7 +14,7 @@ public class MultiplesOfTHREEAndFIVE {
         int sumOfFindNum = 0;
         int div3 = 3;
         int div5 = 5;
-        int startNum = 10;
+        int startNum = 1000;
 
         for (int i = 0; i < startNum; i++) {
             if (i % div3 == 0) {
