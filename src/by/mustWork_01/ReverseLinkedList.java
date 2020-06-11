@@ -6,6 +6,7 @@ public class ReverseLinkedList {
     public static void main(String[] args) {
 
         List<String> list = new LinkedList<String>();
+        List<String> reverseList = new LinkedList<String>();
 
         System.out.println("list before filling : " + list);
         list.add("a");
@@ -25,7 +26,10 @@ public class ReverseLinkedList {
         }
         System.out.println("######## Reverse");
         while (iterator.hasPrevious()){
-            System.out.println("listIterator:" + iterator.previous() );
+            String previous = iterator.previous();
+            reverseList.add(previous);
+            System.out.println("listIterator:" + previous );
         }
+        System.out.println("reverseList = " + reverseList);
     }
 }
